@@ -236,6 +236,9 @@ MoonOrbit = Orbit(f1,f2,a,b,c,e,period,obliquity,
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter(toplot[:,0],toplot[:,1],toplot[:,2])
+ax.axes.set_xlim3d(left=-1, right=1) 
+ax.axes.set_ylim3d(bottom=-1, top=1) 
+ax.axes.set_zlim3d(bottom=-1, top=1) 
 # num_items = toplot2.shape[0]
 # colors = np.arange(num_items) // 29
 # ax.scatter(toplot2[:,0],toplot2[:,1],toplot2[:,2],c=colors,cmap='hsv')
